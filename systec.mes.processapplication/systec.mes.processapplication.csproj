@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IPlusIncludeDir>..\..\iPlus\bin\Debug</IPlusIncludeDir>
+    <IPlusIncludeDir>..\..\iPlusMES\bin\Debug</IPlusIncludeDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,7 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IPlusIncludeDir>..\..\iPlus\bin\Release</IPlusIncludeDir>
+    <IPlusIncludeDir>..\..\iPlusMES\bin\Release</IPlusIncludeDir>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="gip.core.autocomponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL">
