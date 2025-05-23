@@ -1,1 +1,300 @@
-
+<?xml version="1.0" encoding="utf-16"?>
+<vb:VBViewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="http://schemas.abtsoftware.co.uk/scichart" xmlns:vbs="http://www.iplus-framework.com/shapes/xaml" xmlns:vb="http://www.iplus-framework.com/xaml" xmlns:vbc="http://www.iplus-framework.com/scichart/xaml" xmlns:vbm="http://www.iplus-framework.com/manager/xaml" xmlns:vbr="http://www.iplus-framework.com/report/xaml" xmlns:vbv="http://www.iplus-framework.com/visual/xaml">
+  <vb:VBCanvas Background="Transparent" Name="Canvas_0" Width="270" Height="200">
+    <Path x:Name="Path" Width="270.995" Height="200.749" Canvas.Left="-0.0833232" Canvas.Top="-0.24884" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF534A4D" Fill="#FFACABA8" Data="F1 M 1.41668,0.25116L 269.412,0.25116C 269.964,0.25116 270.412,0.698868 270.412,1.25117L 270.412,199C 270.412,199.552 269.964,200 269.412,200L 1.41668,200C 0.864392,200 0.416677,199.552 0.416677,199L 0.416677,1.25117C 0.416677,0.698868 0.864392,0.25116 1.41668,0.25116 Z " />
+    <Rectangle x:Name="Rectangle" Width="262" Height="190.625" Canvas.Left="4.08334" Canvas.Top="5" Stretch="Fill" Fill="#FF354656" />
+    <TextBlock x:Name="TextBlock" TextAlignment="Left" FontFamily="Swis721 Blk BT" FontSize="10" Width="Auto" Height="Auto" Canvas.Top="-3" Canvas.Left="15">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <MatrixTransform Matrix="1.33333,0,0,1.33333,175.817,19.6667" />
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+      <Run Text="SYSTEC IT" Foreground="#FFFF0000" />
+    </TextBlock>
+    <Path Stretch="Fill" Fill="#FFD8D8D8" Data="F1 M 156.5,105.5L 171.5,105.5C 174.261,105.5 176.5,107.739 176.5,110.5L 176.5,125.5C 176.5,128.261 174.261,130.5 171.5,130.5L 156.5,130.5C 153.739,130.5 151.5,128.261 151.5,125.5L 151.5,110.5C 151.5,107.739 153.739,105.5 156.5,105.5 Z " Canvas.Left="220" Canvas.Top="140" />
+    <Path Stretch="Fill" Data="F1 M 124.5,137.5L 139.5,137.5C 142.261,137.5 144.5,139.739 144.5,142.5L 144.5,157.5C 144.5,160.261 142.261,162.5 139.5,162.5L 124.5,162.5C 121.739,162.5 119.5,160.261 119.5,157.5L 119.5,142.5C 119.5,139.739 121.739,137.5 124.5,137.5 Z " Canvas.Top="140" Name="Output1" Canvas.Left="18">
+      <Path.Style>
+        <Style TargetType="{x:Type Path}">
+          <Setter Property="Fill" Value="#FFD8D8D8" />
+          <Style.Triggers>
+            <DataTrigger Binding="{vb:VBBinding vb:VBContent=Outputs1\\Bit00}" Value="True">
+              <Setter Property="Fill" Value="#FF00FF00" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Path.Style>
+    </Path>
+    <Path Stretch="Fill" Data="F1 M 156.5,137.5L 171.5,137.5C 174.261,137.5 176.5,139.739 176.5,142.5L 176.5,157.5C 176.5,160.261 174.261,162.5 171.5,162.5L 156.5,162.5C 153.739,162.5 151.5,160.261 151.5,157.5L 151.5,142.5C 151.5,139.739 153.739,137.5 156.5,137.5 Z " Canvas.Top="140" Canvas.Left="51.763" Name="Output2">
+      <Path.Style>
+        <Style TargetType="{x:Type Path}">
+          <Setter Property="Fill" Value="#FFD8D8D8" />
+          <Style.Triggers>
+            <DataTrigger Binding="{vb:VBBinding vb:VBContent=Outputs1\\Bit01}" Value="True">
+              <Setter Property="Fill" Value="#FF00FF00" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Path.Style>
+    </Path>
+    <Path Stretch="Fill" Data="F1 M 156.5,137.5L 171.5,137.5C 174.261,137.5 176.5,139.739 176.5,142.5L 176.5,157.5C 176.5,160.261 174.261,162.5 171.5,162.5L 156.5,162.5C 153.739,162.5 151.5,160.261 151.5,157.5L 151.5,142.5C 151.5,139.739 153.739,137.5 156.5,137.5 Z " Canvas.Top="140" Canvas.Left="85.763" Name="Output3">
+      <Path.Style>
+        <Style TargetType="{x:Type Path}">
+          <Setter Property="Fill" Value="#FFD8D8D8" />
+          <Style.Triggers>
+            <DataTrigger Binding="{vb:VBBinding vb:VBContent=Outputs1\\Bit02}" Value="True">
+              <Setter Property="Fill" Value="#FF00FF00" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Path.Style>
+    </Path>
+    <Path Stretch="Fill" Data="F1 M 156.5,137.5L 171.5,137.5C 174.261,137.5 176.5,139.739 176.5,142.5L 176.5,157.5C 176.5,160.261 174.261,162.5 171.5,162.5L 156.5,162.5C 153.739,162.5 151.5,160.261 151.5,157.5L 151.5,142.5C 151.5,139.739 153.739,137.5 156.5,137.5 Z " Canvas.Top="140" Canvas.Left="119.763" Name="Output4">
+      <Path.Style>
+        <Style TargetType="{x:Type Path}">
+          <Setter Property="Fill" Value="#FFD8D8D8" />
+          <Style.Triggers>
+            <DataTrigger Binding="{vb:VBBinding vb:VBContent=Outputs1\\Bit03}" Value="True">
+              <Setter Property="Fill" Value="#FF00FF00" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Path.Style>
+    </Path>
+    <Viewbox Width="25" Height="25" Name="GConnected" Canvas.Top="50" Canvas.Left="190">
+      <Canvas Width="25" Height="25">
+        <Path Name="Connected" Width="25" Height="25" Canvas.Left="-3.8147e-006" Canvas.Top="0" Stretch="Fill" Data="F1 M 4.99998,0L 20,0C 22.7614,0 25,2.23857 25,5L 25,20C 25,22.7615 22.7614,25 20,25L 4.99998,25C 2.23857,25 -3.8147e-006,22.7615 -3.8147e-006,20L -3.8147e-006,5C -3.8147e-006,2.23857 2.23857,0 4.99998,0 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=IsConnected}" Value="True">
+                  <Setter Property="Fill" Value="#FF00FF00" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock x:Name="TextBlock_7" TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,7.7,2.38332" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="C" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Width="25" Height="25.0001" Name="GOverload" Canvas.Left="190" Canvas.Top="110">
+      <Canvas Width="25" Height="25.0001">
+        <Path Name="Overload" Width="25" Height="25.0001" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FFD8D8D8" Data="F1 M 5,0L 20,0C 22.7615,0 25,2.23857 25,4.99999L 25,20C 25,22.7615 22.7615,25.0001 20,25.0001L 5,25.0001C 2.23856,25.0001 0,22.7615 0,20L 0,4.99999C 0,2.23857 2.23856,0 5,0 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=StateUL2}" Value="AlarmOrFault">
+                  <Setter Property="Fill" Value="#FFFF0000" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock x:Name="TextBlock_9" TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,7.63336,2.88339" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="O" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Width="25" Height="25" Name="GUnderload" Canvas.Left="190" Canvas.Top="140">
+      <Canvas Width="25" Height="25">
+        <Path Name="Underload" Width="25" Height="25" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FFD8D8D8" Data="F1 M 5,0L 20.0001,0C 22.7615,0 25,2.23857 25,4.99998L 25,20C 25,22.7615 22.7615,25 20.0001,25L 5,25C 2.23857,25 0,22.7615 0,20L 0,4.99998C 0,2.23857 2.23857,0 5,0 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=StateLL2}" Value="AlarmOrFault">
+                  <Setter Property="Fill" Value="#FFFF0000" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,7.90005,2.90839" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="U" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Width="25" Height="25.0001" Name="GReading" Canvas.Left="220" Canvas.Top="50">
+      <Canvas Width="25" Height="25.0001">
+        <Path Name="Reading" Width="25" Height="25.0001" Canvas.Left="0" Canvas.Top="7.62939e-006" Stretch="Fill" Data="F1 M 5,7.62939e-006L 20,7.62939e-006C 22.7615,7.62939e-006 25,2.23858 25,5L 25,20.0001C 25,22.7615 22.7615,25.0001 20,25.0001L 5,25.0001C 2.23856,25.0001 0,22.7615 0,20.0001L 0,5C 0,2.23858 2.23856,7.62939e-006 5,7.62939e-006 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=ScaleMode}" Value="4">
+                  <Setter Property="Fill" Value="#FFFF0000" />
+                  <DataTrigger.EnterActions>
+                    <BeginStoryboard Name="StoryStart">
+                      <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)" From="0.5" To="1" Duration="0:0:1" RepeatBehavior="Forever" AutoReverse="True" />
+                      </Storyboard>
+                    </BeginStoryboard>
+                  </DataTrigger.EnterActions>
+                  <DataTrigger.ExitActions>
+                    <StopStoryboard BeginStoryboardName="StoryStart" />
+                  </DataTrigger.ExitActions>
+                </DataTrigger>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=ScaleMode}" Value="3">
+                  <Setter Property="Fill" Value="#FFFFC800" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock x:Name="TextBlock_13" TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,7.30001,2.3834" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="R" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Width="25" Height="25.0001" Name="GStillstand" Canvas.Top="80" Canvas.Left="190">
+      <Canvas Width="25" Height="25.0001">
+        <Path Name="Stillstand" Width="25" Height="25.0001" Canvas.Left="-7.62939e-006" Canvas.Top="7.62939e-006" Stretch="Fill" Data="F1 M 4.99999,7.62939e-006L 20,7.62939e-006C 22.7615,7.62939e-006 25,2.23858 25,5L 25,20.0001C 25,22.7615 22.7615,25.0001 20,25.0001L 4.99999,25.0001C 2.23856,25.0001 -7.62939e-006,22.7615 -7.62939e-006,20.0001L -7.62939e-006,5C -7.62939e-006,2.23858 2.23856,7.62939e-006 4.99999,7.62939e-006 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=NotStandStill}" Value="True">
+                  <Setter Property="Fill" Value="#FFFFC800" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,8.23334,2.6334" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="S" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Name="GEmpty" Width="25" Height="25" Canvas.Left="220" Canvas.Top="80">
+      <Canvas Width="25" Height="25">
+        <Path x:Name="Empty" Width="25" Height="25" Canvas.Left="-3.8147e-006" Canvas.Top="0" Stretch="Fill" Fill="#FFD8D8D8" Data="F1 M 4.99998,0L 20,0C 22.7614,0 25,2.23859 25,5.00002L 25,20C 25,22.7615 22.7614,25 20,25L 4.99998,25C 2.23857,25 -3.8147e-006,22.7615 -3.8147e-006,20L -3.8147e-006,5.00002C -3.8147e-006,2.23859 2.23857,0 4.99998,0 Z " />
+        <TextBlock x:Name="TextBlock_17" TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,8.36668,2.47499" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="E" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Viewbox Width="25" Height="25.0001" Name="GInvalid" Canvas.Left="220" Canvas.Top="110">
+      <Canvas Width="25" Height="25.0001">
+        <Path Name="Invalid" Width="25" Height="25.0001" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="F1 M 5,0L 20.0001,0C 22.7615,0 25,2.23857 25,5L 25,20C 25,22.7615 22.7615,25.0001 20.0001,25.0001L 5,25.0001C 2.23856,25.0001 0,22.7615 0,20L 0,5C 0,2.23857 2.23856,0 5,0 Z ">
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type Path}">
+              <Setter Property="Fill" Value="#FFD8D8D8" />
+              <Style.Triggers>
+                <DataTrigger Binding="{vb:VBBinding vb:VBContent=StateScale}" Value="AlarmOrFault">
+                  <Setter Property="Fill" Value="#FFFF0000" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </FrameworkElement.Style>
+        </Path>
+        <TextBlock x:Name="TextBlock_19" TextAlignment="Center" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <MatrixTransform Matrix="1.33333,0,0,1.33333,11.1,2.22507" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+          <Run FontFamily="Arial Black" FontWeight="Bold" FontSize="10" Text="I" Foreground="#FF000000" />
+        </TextBlock>
+      </Canvas>
+    </Viewbox>
+    <Rectangle Stroke="#FF778899" StrokeThickness="1" Fill="#FF4DEA74" Height="112.5" Canvas.Top="18.5" Width="170" Canvas.Left="10" />
+    <vb:VBTextBlock vb:VBContent="ActualValue" Name="ActualValue_0" Height="Auto" IsEnabled="False" Background="Transparent" Foreground="Black" FontWeight="Bold" FontStyle="Italic" vb:StringFormat="F1" Canvas.Top="29.667" TextAlignment="Right" FontSize="30" Canvas.Left="0" Width="122">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <MatrixTransform Matrix="1.33333,0,0,1.33333,12.6734,-13.41666" />
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </vb:VBTextBlock>
+    <vb:VBTextBlock vb:VBContent="AlibiWeight" Name="AlibiWeight_0" Height="Auto" IsEnabled="False" Background="Transparent" Foreground="Black" FontWeight="Bold" FontStyle="Italic" vb:StringFormat="F1" TextAlignment="Right" FontSize="30" Canvas.Top="80" Width="122" Canvas.Left="0">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <MatrixTransform Matrix="1.33333,0,0,1.33333,12.6734,-13.41666" />
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </vb:VBTextBlock>
+    <Viewbox x:Name="Glas" Width="269.982" Height="200" Canvas.Left="0" Canvas.Top="0">
+      <Canvas Width="269.982" Height="200">
+        <Path x:Name="Path_20" Stretch="Fill" Data="F1 M 268.982,0L 1.00002,0C 0.447744,0 2.04806e-005,0.447708 2.04806e-005,0.999985L 2.04806e-005,199C 2.04806e-005,199.552 0.447744,200 1.00002,200L 268.982,200C 269.534,200 269.982,199.552 269.982,199L 269.982,0.999985C 269.982,0.447708 269.534,0 268.982,0 Z " StrokeThickness="1" StrokeLineJoin="Bevel" Canvas.Left="2.04806e-005" Canvas.Top="0" Height="200" Width="269.982">
+          <Path.Stroke>
+            <RadialGradientBrush RadiusX="1.00007" RadiusY="0.644927" Center="1.00007,0.5" GradientOrigin="1.00007,0.5">
+              <RadialGradientBrush.GradientStops>
+                <GradientStop Color="#B3000000" Offset="0.00436681" />
+                <GradientStop Color="#00000000" Offset="0.253275" />
+                <GradientStop Color="#00000000" Offset="0.741525" />
+                <GradientStop Color="#B3000000" Offset="1" />
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <RotateTransform CenterX="1.00007" CenterY="0.5" Angle="180" />
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </Path.Stroke>
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="1.00007,0.5" EndPoint="3.20056e-006,0.5">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#B3000000" Offset="0.00436681" />
+                <GradientStop Color="#00000000" Offset="0.253275" />
+                <GradientStop Color="#00000000" Offset="0.741525" />
+                <GradientStop Color="#B3000000" Offset="1" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path x:Name="Path_21" Width="261.668" Height="6" Canvas.Left="3.66797" Canvas.Top="189.341" Stretch="Fill" Data="F1 M 128.085,189.341L 141.159,189.341C 195.42,189.341 263.31,192.014 265.336,195.341L 3.66797,195.341C 5.70047,192.014 73.8246,189.341 128.085,189.341 Z ">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="1,0.5" EndPoint="8.07887e-008,0.5">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#0DFFFFFF" Offset="0.00847458" />
+                <GradientStop Color="#CCFFFFFF" Offset="1" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path x:Name="Path_22" Width="261.668" Height="5.99998" Canvas.Left="3.66804" Canvas.Top="5.17079" Stretch="Fill" Data="F1 M 128.085,11.1708L 141.159,11.1708C 195.42,11.1708 263.31,8.49828 265.336,5.17079L 3.66804,5.17079C 5.70054,8.49828 73.8246,11.1708 128.085,11.1708 Z ">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="1,0.499999" EndPoint="8.07887e-008,0.499999">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#0DFFFFFF" Offset="0.00847458" />
+                <GradientStop Color="#CCFFFFFF" Offset="1" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </Viewbox>
+  </vb:VBCanvas>
+</vb:VBViewbox>
