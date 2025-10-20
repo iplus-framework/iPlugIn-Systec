@@ -742,7 +742,7 @@ namespace systec.mes.processapplication
 
                         string readResult = myCompleteMessage.ToString();
 
-                        if (string.IsNullOrEmpty(readResult) || readResult.Length < 66)
+                        if (string.IsNullOrEmpty(readResult) || readResult.Length < 4)
                             return ReportError("Wrong answer from waage!");
 
                         int status = 0;
@@ -752,6 +752,9 @@ namespace systec.mes.processapplication
                         var error = ExtractErrors(status);
                         if (error != null)
                             return ReportError(error);
+
+                        if (readResult.Length < 66)
+                            return ReportError("Wrong answer from waage!");
 
                         int eichNr = -1;
                         string eichNrError = null;
@@ -796,7 +799,7 @@ namespace systec.mes.processapplication
 
                         string readResult = myCompleteMessage.ToString();
 
-                        if (string.IsNullOrEmpty(readResult) || readResult.Length < 63)
+                        if (string.IsNullOrEmpty(readResult) ||  readResult.Length < 4)
                             return ReportError("Wrong answer from waage!");
 
                         if (readResult[0] == '<') 
@@ -805,11 +808,11 @@ namespace systec.mes.processapplication
                         if (iEnd > 0)
                             readResult = readResult.Substring(0, iEnd);
 
-                        if (string.IsNullOrEmpty(readResult) || readResult.Length < 63)
+                        if (string.IsNullOrEmpty(readResult) || readResult.Length < 2)
                             return ReportError("Wrong answer from waage!");
 
                         string[] resArr = readResult.Split(';');
-                        if (resArr == null || resArr.Length < 10)
+                        if (resArr == null || resArr.Length < 1)
                             return ReportError("To less values in result!");
 
                         int status = 0;
@@ -818,6 +821,12 @@ namespace systec.mes.processapplication
                         var error = ExtractErrors(status);
                         if (error != null)
                             return ReportError(error);
+
+                        if (readResult.Length < 63)
+                            return ReportError("Wrong answer from waage!");
+                        if (resArr.Length < 10)
+                            return ReportError("To less values in result!");
+
 
                         NotStandStill.ValueT = resArr[1][0] == '1';
                         //bool empty = resArr[1][1] == '2';
