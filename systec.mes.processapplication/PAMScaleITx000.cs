@@ -32,7 +32,7 @@ namespace systec.mes.processapplication
                 (Outputs1 as IACPropertyNetServer).ValueUpdatedOnReceival += BitAccess_PropertyChanged;
             if (Outputs2 != null)
                 (Outputs2 as IACPropertyNetServer).ValueUpdatedOnReceival += BitAccess_PropertyChanged;
-            CurrentScaleMode = PAScaleMode.Idle;
+            //CurrentScaleMode = PAScaleMode.Idle; // Start with last Setting
             return true;
         }
 
@@ -62,7 +62,7 @@ namespace systec.mes.processapplication
                     _PollThread.Abort();
                 _PollThread = null;
             }
-            StopReadWeightData();
+            //StopReadWeightData();  // Start with last Setting
             ClosePort();
             if (Outputs1 != null)
                 (Outputs1 as IACPropertyNetServer).ValueUpdatedOnReceival -= BitAccess_PropertyChanged;
