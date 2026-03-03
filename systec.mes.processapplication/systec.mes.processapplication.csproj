@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\iPlus\Directory.Build.props" />
   <PropertyGroup>
     <TargetFramework>$(DefaultNetCoreTargetFramework)</TargetFramework>
     <OutputType>Library</OutputType>
@@ -39,21 +38,30 @@
     <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="gip.core.autocomponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="gip.core.autocomponent"  Condition="'$(UseProjectReferences)' != 'true'">
       <HintPath>$(IPlusIncludeDir)\gip.core.autocomponent.dll</HintPath>
     </Reference>
-    <Reference Include="gip.core.datamodel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <ProjectReference Include="..\..\iPlus\gip.core.autocomponent\gip.core.autocomponent.csproj" Condition="'$(UseProjectReferences)' == 'true'">
+      <Name>gip.core.autocomponent</Name>
+    </ProjectReference>
+    <Reference Include="gip.core.datamodel" Condition="'$(UseProjectReferences)' != 'true'">
       <HintPath>$(IPlusIncludeDir)\gip.core.datamodel.dll</HintPath>
     </Reference>
-    <Reference Include="gip.core.processapplication">
-      <SpecificVersion>False</SpecificVersion>
+    <ProjectReference Include="..\..\iPlus\gip.core.datamodel\gip.core.datamodel.csproj" Condition="'$(UseProjectReferences)' == 'true'">
+      <Name>gip.core.datamodel</Name>
+    </ProjectReference>
+    <Reference Include="gip.core.processapplication" Condition="'$(UseProjectReferences)' != 'true'">
       <HintPath>$(IPlusIncludeDir)\gip.core.processapplication.dll</HintPath>
     </Reference>
-    <Reference Include="gip.mes.processapplication">
+    <ProjectReference Include="..\..\iPlus\gip.core.processapplication\gip.core.processapplication.csproj" Condition="'$(UseProjectReferences)' == 'true'">
+      <Name>gip.core.processapplication</Name>
+    </ProjectReference>
+    <Reference Include="gip.mes.processapplication" Condition="'$(UseProjectReferences)' != 'true'">
       <HintPath>$(IPlusIncludeDir)\gip.mes.processapplication.dll</HintPath>
     </Reference>
+    <ProjectReference Include="..\..\iPlusMES\gip.mes.processapplication\gip.mes.processapplication.csproj" Condition="'$(UseProjectReferences)' == 'true'">
+      <Name>gip.mes.processapplication</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Update="VBControlScripts\2024-02-06 14-14_dlisak.zip">
