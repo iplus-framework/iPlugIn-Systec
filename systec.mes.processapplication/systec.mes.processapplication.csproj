@@ -36,7 +36,7 @@
     <IPlusIncludeDir>..\..\iPlusMES\bin\Release</IPlusIncludeDir>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="gip.core.autocomponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL">
+    <Reference Include="gip.core.autocomponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL" Condition="'$(UseProjectReferences)' != 'true'">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(IPlusIncludeDir)\gip.core.autocomponent.dll</HintPath>
     </Reference>
@@ -44,7 +44,7 @@
       <Project>{893D3B1B-DC55-4684-8B5D-941F1049151B}</Project>
       <Name>gip.core.autocomponent</Name>
     </ProjectReference>
-    <Reference Include="gip.core.datamodel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL">
+    <Reference Include="gip.core.datamodel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=12adb6357a02d860, processorArchitecture=MSIL" Condition="'$(UseProjectReferences)' != 'true'">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(IPlusIncludeDir)\gip.core.datamodel.dll</HintPath>
     </Reference>
